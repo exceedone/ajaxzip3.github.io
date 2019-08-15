@@ -5,7 +5,7 @@
 - name指定結果返却方法を変更
 
 
-- 新規の設置には [yubinbango](https://github.com/yubinbango/yubinbango)ライブラリの使用をオススメしています。
+新規の設置には [yubinbango](https://github.com/yubinbango/yubinbango)ライブラリの使用をオススメしています。
 
 #ajaxzip3
 世界一、簡単に設置できる郵便番号検索を目指して！
