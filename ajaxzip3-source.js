@@ -144,6 +144,10 @@ AjaxZip3.callback = function(data){
                 var vpref = opts[i].value;
                 var tpref = opts[i].text;
                 opts[i].selected = ( vpref == pref_id || vpref == jpref || tpref == jpref );
+                
+                if(opts[i].selected){
+                    $(AjaxZip3.fpref).trigger('change');
+                }
             }
         } else {
             if ( AjaxZip3.fpref.name == AjaxZip3.faddr.name ) {
@@ -211,11 +215,13 @@ AjaxZip3.getElementByName = function ( elem, sibling ) {
         if ( ! list ) return null;
         if ( list.length > 1 && sibling && sibling.form ) {
             var form = sibling.form.elements;
+            var item = null;
             for( var i=0; i<form.length; i++ ) {
                 if ( form[i].name == elem ) {
-                    return form[i];
+                    item = form[i];
                 }
             }
+            return item;
         } else {
             return list[0];
         }
