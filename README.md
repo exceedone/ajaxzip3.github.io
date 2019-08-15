@@ -1,3 +1,10 @@
+# 重要：Ex1
+このライブラリは、ajaxzip3/ajaxzip3.github.ioを一部カスタマイズしております。  
+以下の修正を行っております。  
+- select2に対応
+- name指定結果返却方法を変更
+
+
 - 新規の設置には [yubinbango](https://github.com/yubinbango/yubinbango)ライブラリの使用をオススメしています。
 
 #ajaxzip3
